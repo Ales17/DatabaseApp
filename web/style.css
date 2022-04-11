@@ -1,0 +1,142 @@
+body {
+	font-family: Arial, sans-serif;  padding-left: calc(100vw - 100%);
+ 
+}
+ 
+.poznamka { width: 100%; height: max-content; border: 1px solid black; background-color:rgb(255,240,112);   margin-bottom: 10px ; padding: 18px; box-sizing: border-box; font-size: 20px;  } .container {display: flex; flex-direction: column;}
+.poznamka:last-child {margin-bottom: 0px}
+h1, h2, h3 {
+	text-align: center
+}
+/*Základní úprava pro navigaci*/
+#nav ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+#nav a {
+	color: black;
+	padding-left: 8px;
+	box-sizing: border-box;
+	text-decoration: none;
+	display: block;
+	width: 100%;
+	background-color:     rgb(0,208,255);
+	line-height: 2em;
+}
+#nav {
+	margin-bottom: 8px;
+}
+
+textarea {width: 100%; min-height: 150px; box-sizing: border-box; padding: 18px}
+ 
+input[type=text], input[type=number], input[type=submit], input[type=tel], select {
+	width: 100%; box-sizing: border-box;
+}
+
+.x {text-decoration: none;Float: right ;font-size:24px; }
+
+@media only screen and (min-width:600px) {  
+ 
+.poznamka { overflow-y: auto; height: 220px; width: 220px; margin-right: 10px }  .container {justify-content: ;  flex-direction: row; flex-wrap : wrap; }     
+
+.poznamka:last-child {margin-right: 0px}
+input[type=text], input[type=number], input[type=submit], input[type=tel], select {
+	width: 200px; box-sizing: border-box;
+}
+
+ 
+
+#nav li {
+	display: inline-block;
+	margin-right: -5px
+}
+ 
+#nav a {
+	padding: 8px;
+	width: 150px
+}
+#nav a:hover {
+	font-weight: bold; background-color:  rgb(144,240,255);
+}
+#nav ul {
+	text-align: center;
+}
+ul {
+	padding: 0;
+}
+ 
+}
+.radio input {
+	height: 14px;
+	width: 14px;
+}
+.submit input {
+	height: 30px;
+}/*
+input, select {
+	margin-top: 5px;
+	margin-bottom: 5px;
+	height: 30px;
+}*/
+/*Tlaèítko SUBMIT ve vyhledávání*/
+
+input[type=number]:hover::-webkit-inner-spin-button {
+	height: 25px;
+}
+input[type=number]::-webkit-inner-spin-button {
+	height: 25px;
+}
+table {
+	margin-left: auto;
+	margin-right: auto;
+	border-collapse: collapse;
+}
+
+
+tr:nth-child(even) {
+	background-color: #f2f2f2;
+}
+td {
+	width: 130px;
+}
+/*Tabulka se 100 nej náhozy*/
+.vykony  td:nth-child(3), .vykony  td:nth-child(5) {
+	text-align: center;
+}
+/* Odkaz uprostøed první (filtrovací) tabulky - display block, aby byla celá buòka klikací*/
+.liga {
+	display: block;
+}
+/* První tabulka na domovské stránce - filtrování podle ligy*/
+.filtruj td, th {
+	text-align: center;
+}
+.filtruj a, .filtruj a:visited {
+	font-weight: bold;
+	color: rgb(0,0,0);
+	display: block;
+	text-decoration: none;
+	text-align: center;
+}
+.filtruj a:hover {
+	background-color: black;
+	color: white;
+}
+/*Na mobilu se kvùli úspoøe místa nezobrazí sloupeèek se jmény v tabulce nejlepších náhozù.*/
+@media only screen and (max-width:600px) {
+.vykony th: nth-child(1), .vykony   td: nth-child(1) {
+	display: none;
+}
+}
+/* Tlaèítko */
+.button1 {
+	border: 1px solid black;
+	padding: 4px;
+	text-decoration: none;
+	color: black;
+}
+.button1:hover {
+	background-color: black;
+	color: white;
+}
